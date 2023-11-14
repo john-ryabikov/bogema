@@ -1126,7 +1126,7 @@ ul[class], ol[class] {
   justify-content: flex-start;
   width: 100%;
   height: 600px;
-  background: url(../../img/Block-5/block-5_img.jpg) no-repeat;
+  background: url(../img/Block-5/block-5_img.jpg) no-repeat;
   background-size: cover;
   color: #ffffff;
 }
@@ -1258,7 +1258,7 @@ ul[class], ol[class] {
 
 @media only screen and (min-width: 0) and (max-width: 480px) {
   .block-5__info {
-    background: url(../../img/Block-5/block-5_img-mob.jpg) no-repeat;
+    background: url(../img/Block-5/block-5_img-mob.jpg) no-repeat;
   }
   .block-5__info-h {
     font-size: 46px;
