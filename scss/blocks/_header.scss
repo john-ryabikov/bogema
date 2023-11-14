@@ -1,0 +1,117 @@
+.header {
+    @include flex-column();
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px; 
+    z-index: 1; 
+    &__cont{
+        @include flex-row();
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__logo-icon {
+        cursor: pointer;
+    }
+    &__nav{
+        @include flex-row();
+        justify-content: space-between;
+        font-family: "Jost Light";
+        font-size: 16px;
+        font-style: normal;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #000;
+        margin-right: 180px;
+    }
+    &__nav-link{
+        position: relative;
+        text-align: center;
+        margin-right: 30px;
+        color: #000;
+        transition: all 0.4s;
+        &:hover {
+            color:#B1C965;
+        }
+        &:last-child {
+            margin-right: 0;
+        } 
+    }
+    &__call-box{
+        @include flex-row();
+        justify-content: space-between;
+    }
+    &__call-text{
+        @include flex-column();
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    &__call-number{
+        position: relative;
+        font-family: "Jost Regular";
+        font-size: 26px;
+        font-style: normal;
+        color: #000;
+        line-height: 130%;
+        text-align: end;
+        span{
+            color: #898989;
+        }
+    }
+    &__call-time{
+        position: relative;
+        font-family: "Jost Thin";
+        font-size: 14px;
+        font-style: normal;
+        color: #000;
+        line-height: 130%;
+        text-align: end;
+    }
+    &__call-btn{
+        @include flex-column();
+        background-color: #25D366;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        transition: all 0.4s;
+        &:hover {
+            @include btn-eff();
+        }
+    }
+    &__btn-menu {
+        display: none;
+    }
+}
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    .header {
+        @include flex-column();
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110px; 
+        z-index: 1; 
+        &__logo-icon {
+            width: 150px;
+        }
+        &__nav{
+            display: none;
+        }
+        &__call-box{
+            display: none;
+        }
+        &__btn-menu {
+            display: block;
+        }
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 560px) {
+}
+@media only screen and (min-width: 561px) and (max-width: 767px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+}
+@media only screen and (min-width: 1180px) and (max-width: 1300px) {
+} 

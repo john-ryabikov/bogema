@@ -1,0 +1,182 @@
+.block-4 {
+    @include flex-column();
+    width: 100%;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    &__cont{
+        @include flex-column();
+        width: 100%;
+    }
+    &__line{
+        position: absolute;
+        top: 32px;
+        left: -5880px;
+        width: 6000px;
+        height: 1px;
+        background-color: #000;
+    }
+    &__decor{
+        position: absolute;
+        top: -20px;
+        left: 270px;
+        width: 300px;
+        height: 100px;
+        background-color: #B1C965;
+    }
+    &__cont-h{
+        position: relative;
+        width: 100%;
+        font-family: "Jost Bold";
+        font-size: 50px;
+        font-style: normal;
+        text-align: center;
+        line-height: 130%;
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    &__cont-subh{
+        position: relative;
+        font-family: "Jost Light";
+        font-size: 28px;
+        font-style: normal;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.60);
+        line-height: 130%;
+        margin-bottom: 70px;
+    }
+    &__steps{
+        @include flex-row();
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__step{
+        @include flex-column();
+        justify-content: flex-start;
+    }
+    &__btn-box{
+        @include flex-column();
+        justify-content: flex-start;
+        margin-top: 100px;
+    }
+    &__btn{
+        @include flex-row();
+        justify-content: space-between;
+        width: 300px;
+        height: 80px;
+        border-radius: 68px;
+        background-color: #C4D68B;
+        padding: 12px;
+        margin-bottom: 12px;
+        transition: all 0.4s;
+        &:hover {
+            @include btn-eff();
+        }
+    }
+    &__btn-text{
+        font-family: "Jost Medium";
+        font-size: 16px;
+        font-style: normal;
+        margin-left: 50px;
+        color: #ffffff;
+        line-height: 130%;
+    }
+}
+.step{
+    &__num{
+        &_1{
+            @include flex-column();
+            font-family: "Jost Medium";
+            font-size: 36px;
+            font-style: normal;
+            line-height: 130%;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            border: 1px solid #95CCC8;
+            color: #95CCC8;    
+        }
+        &_2{
+            @include flex-column();
+            font-family: "Jost Medium";
+            font-size: 36px;
+            font-style: normal;
+            line-height: 130%;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            border: 1px solid #FF7B7B;
+            color: #FF7B7B;
+        }
+        &_3{
+            @include flex-column();
+            font-family: "Jost Medium";
+            font-size: 36px;
+            font-style: normal;
+            line-height: 130%;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            border: 1px solid #F6C361;
+            color: #F6C361;
+        }
+        &_4{
+            @include flex-column();
+            font-family: "Jost Medium";
+            font-size: 36px;
+            font-style: normal;
+            line-height: 130%;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            border: 1px solid #71CC6F;
+            color: #71CC6F;
+        }
+    }
+    &__text{
+        position: relative;
+        width: 240px;
+        font-family: "Jost Light";
+        font-size: 20px;
+        font-style: normal;
+        text-align: center;
+        margin-top: 16px;
+        line-height: 130%;
+    }
+}
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    .block-4 {
+        &__line{
+            top: 23px;
+            left: -5945px;
+        }
+        &__decor{
+            top: -10px;
+            left: 135px;
+            height: 80px;
+        }
+        &__cont-h{
+            font-size: 36px;
+        }
+        &__cont-subh{
+            font-size: 24px;
+        }
+        &__steps{
+            @include flex-column();
+        }
+        &__step{
+            margin-bottom: 90px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 560px) {
+}
+@media only screen and (min-width: 561px) and (max-width: 767px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+}
+@media only screen and (min-width: 1180px) and (max-width: 1300px) {
+} 

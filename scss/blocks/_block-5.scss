@@ -1,0 +1,171 @@
+.block-5 {
+    @include flex-column();
+    width: 100%;
+    padding-top: 110px;
+    &__cont{
+        @include flex-column();
+        width: 100%;
+    }
+    &__info{
+        @include flex-column();
+        justify-content: flex-start;
+        width: 100%;
+        height: 600px;
+        background: url(../../img/Block-5/block-5_img.jpg) no-repeat;
+        background-size: cover;
+        color: #ffffff;
+    }
+    &__info-h{
+        position: relative;
+        font-family: "Jost Medium";
+        font-size: 50px;
+        font-style: normal;
+        text-align: center;
+        line-height: 130%;
+        margin-top: 100px;
+        text-transform: uppercase;
+    }
+    &__info-p{
+        position: relative;
+        width: 830px;
+        font-family: "Jost Light";
+        font-size: 24px;
+        font-style: normal;
+        text-align: center;
+        line-height: 130%;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ffffff;
+        margin-top: 55px;
+    }
+    &__info-btn{
+        @include flex-column;
+        width: 240px;
+        height: 80px;
+        font-family: "Jost Medium";
+        font-size: 16px;
+        font-style: normal;
+        text-align: center;
+        line-height: 130%;
+        border: 1px solid #ffffff;
+        border-radius: 40px;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 55px;
+        transition: all 0.4s;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        } 
+    }
+    &__warranty{
+        @include flex-row();
+        justify-content: space-between;
+        width: 770px;
+        margin-top: 110px;
+        color: #000;
+    }
+    &__warranty-img{
+        margin-right: 40px;
+    }
+    &__warranty-text{
+        position: relative;
+        font-family: "Jost Light";
+        font-size: 24px;
+        font-style: normal;
+        text-align: start;
+        line-height: 130%;
+    }
+    &__underfooter{
+        //@include border();
+        @include flex-row();
+        width: 100%;
+        height: 150px;
+        border-top: 1px solid #000;
+        margin-top: 110px; 
+    }
+    &__underfooter-text{
+        //@include border();
+        @include flex-row();
+        margin-right: 6px;
+    }
+    &__underfooter-text-1{
+        position: relative;
+        font-family: "Jost Light";
+        font-size: 28px;
+        text-align: start;
+        line-height: 130%;
+        color: rgba(0, 0, 0, 0.60);
+    }
+    &__underfooter-text-2{
+        @include flex-row();
+        font-family: "Jost Regular";
+        font-size: 28px;
+        line-height: 130%;
+        b{
+            color: rgba(0, 0, 0, 0.60);
+        }
+    }
+    &__underfooter-link{
+        @include flex-column();
+        margin-left: 10px;
+        transition: all 0.4s;
+        &:hover {
+            @include btn-eff();
+        }
+    }
+}
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    .block-5 {
+        &__info{
+            background: url(../../img/Block-5/block-5_img-mob.jpg) no-repeat;
+        }
+        &__info-h{
+            font-size: 46px;
+        }
+        &__info-p{
+            width: 280px;
+            font-size: 18px;
+        }
+        &__info-btn{
+            width: 280px;
+        }
+        &__warranty{
+            @include flex-column();
+            width: 100%;
+        }
+        &__warranty-img{
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+        &__warranty-text{
+            font-size: 18px;
+            text-align: center;
+        }
+        &__underfooter{
+            @include flex-column();
+            height: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        &__underfooter-text{
+            @include flex-column();
+        }
+        &__underfooter-text-1{
+            font-size: 18px;
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        &__underfooter-text-2{
+            font-size: 28px;
+            text-align: center;
+        } 
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 560px) {
+}
+@media only screen and (min-width: 561px) and (max-width: 767px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+}
+@media only screen and (min-width: 1180px) and (max-width: 1300px) {
+} 

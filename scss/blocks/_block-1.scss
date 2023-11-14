@@ -1,0 +1,118 @@
+.block-1 {
+    @include flex-column();
+    width: 100%;
+    height: 100vh;
+    &__cont{
+        //@include border();
+        @include flex-column();
+        align-items: flex-start;
+        width: 100%;
+        height: 670px;
+    }
+    &__lines{
+        position: absolute;
+        bottom: -208px;
+        left: -1790px;
+        width: 2000px;
+        height: 330px;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+        z-index: 0;
+    }
+    &__title{
+        @include flex-column();
+        width: 590px;
+        padding: 32px;
+        background-color: #B1C965;
+        z-index: 2;
+    }
+    &__title-text{
+        @include flex-column();
+        align-items: flex-start;
+        width: 100%;
+        color: #ffffff;
+    }
+    &__title-h{
+        position: relative;
+        font-family: "Jost Bold";
+        font-size: 50px;
+        font-style: normal;
+        text-align: start;
+        line-height: 130%;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    &__title-p{
+        position: relative;
+        font-family: "Jost Light";
+        font-size: 28px;
+        font-style: normal;
+        text-align: start;
+        line-height: 130%;
+    }
+    &__title-link{
+        //@include border();
+        position: absolute;
+        bottom: -100px;
+        left: -20px;
+        font-family: "Jost Bold";
+        font-size: 16px;
+        font-style: normal;
+        text-align: center;
+        color: #000;
+        padding: 20px;
+        text-transform: uppercase;
+        background-color: #ffffff;
+    }
+    &__img{
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+    &__arrow{
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+    }
+}
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    .block-1 {
+        height: 800px;
+        &__cont{
+            height: 590px;
+        }
+        &__lines{
+            bottom: -368px;
+            height: 310px;
+        }
+        &__title{
+            width: 100%;
+        }
+        &__title-h{
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        &__title-p{
+            font-size: 20px;
+        }
+        &__title-link{
+            bottom: -280px;
+        }
+        &__img{
+            right: -540px;
+            transform: scale(-1, 1);
+        }
+        &__arrow{
+            bottom: -165px;
+        }
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 560px) {
+}
+@media only screen and (min-width: 561px) and (max-width: 767px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+}
+@media only screen and (min-width: 1180px) and (max-width: 1300px) {
+} 

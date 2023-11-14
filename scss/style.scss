@@ -1,0 +1,125 @@
+/*Стандартные настройки страницы 
+=======================================*/
+
+html {font-family: "Jost Light", sans-serif; overflow-x: hidden;}
+body {margin: 0;padding: 0;overflow-x: hidden;}
+* {box-sizing: border-box;}
+a {text-decoration: none;  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);}
+p {margin: 0;user-select: none;}
+h1,h2,h3,h4,h5,h6 {font-weight: inherit; font-size: inherit; user-select: none; margin: 0;padding: 0;}
+ul[class],ol[class] {list-style: none;margin: 0;}
+.uncor {position: absolute; top: 20px; left: 0;}
+#main {top: 0;}
+
+//Миксины   --------------------------------------------------------------------------------------------------------------------------------------------------------
+
+@import "functions/mixins";
+
+//Подключение шрифтов   --------------------------------------------------------------------------------------------------------------------------------------------
+
+@import "fonts/fonts";
+
+//Анимации   --------------------------------------------------------------------------------------------------------------------------------------------
+
+@keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+}
+
+//Стандартные размеры для контейнеров и блоков   -------------------------------------------------------------------------------------------------------------------
+$cont-w: 1180px;
+
+//Граница страницы сайта   -----------------------------------------------------------------------------------------------------------------------------------------
+.main {
+    @include flex-column();
+    width: 100vw;
+}
+
+//Стандартные настройки контейнера   -------------------------------------------------------------------------------------------------------------------------------
+.container {
+    //@include border();
+    @include flex-column();
+    width: $cont-w;
+}
+
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    .container {
+        //@include border();
+        @include flex-column();
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 560px) {
+    .container {
+        //@include border();
+        @include flex-column();
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+@media only screen and (min-width: 561px) and (max-width: 1179px) {
+    .container {
+        //@include border();
+        @include flex-column();
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media only screen and (min-width: 1180px) and (max-width: 1300px) {
+    .container {
+        //@include border();
+        @include flex-column();
+        width: 1080px;
+    }
+} 
+
+/*МЕНЮ
+=======================================*/
+
+@import "blocks/menu";
+
+/*ШАПКА САЙТА
+=======================================*/
+
+@import "blocks/header";
+
+/*БЛОК-1
+=======================================*/
+
+@import "blocks/block-1";
+
+/*БЛОК-2
+=======================================*/
+
+@import "blocks/block-2";
+
+/*БЛОК-3
+=======================================*/
+
+@import "blocks/block-3";
+
+/*БЛОК-4
+=======================================*/
+
+@import "blocks/block-4";
+
+/*БЛОК-5
+=======================================*/
+
+@import "blocks/block-5";
+
+
+/*ПОДВАЛ САЙТА
+=======================================*/
+
+@import "blocks/footer";

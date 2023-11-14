@@ -1,0 +1,224 @@
+.block-3 {
+    @include flex-column();
+    width: 100%;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    &__lines{
+        position: absolute;
+        top: -134px;
+        right: -1030px;
+        width: 2000px;
+        height: 166px;
+        border-bottom: 1px solid #000;
+        border-left: 1px solid #000;
+        z-index: 0;
+    }
+    &__cont{
+        @include flex-column();
+        width: 100%;
+    }
+    &__decor{
+        position: absolute;
+        top: -20px;
+        right: 45px;
+        width: 146px;
+        height: 100px;
+        background-color: #B1C965;
+    }
+    &__background{
+        //@include border();
+        position: absolute;
+        top: -20px;
+        right: -26px;
+        width: 420px;
+        height: 100px;
+        background-color: #ffffff;
+    }
+    &__cont-h{
+        position: relative;
+        width: 100%;
+        font-family: "Jost Bold";
+        font-size: 50px;
+        font-style: normal;
+        text-align: end;
+        line-height: 130%;
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: 110px;
+    }
+    &__categories{
+        @include flex-column();
+        justify-content: flex-start;
+        width: 100%;
+    }
+    &__categories-row{
+        @include flex-row();
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 100px;
+        &:last-child {
+            //@include border();
+            justify-content: flex-start;
+            margin-bottom: 0;
+        }
+    }
+    &__category{
+        //@include border();
+        @include flex-column();
+        justify-content: flex-start;
+        width: 360px;
+        height: 360px;
+        &_last {
+            //@include border();
+            @include flex-column();
+            justify-content: flex-start;
+            width: 360px;
+            height: 360px;
+            margin-left: 49px;
+        }
+    }
+    &__colors{
+        @include flex-row();
+        margin-top: 155px;
+    }
+    &__colors-text{
+        position: relative;
+        font-family: "Jost Light";
+        font-size: 28px;
+        font-style: normal;
+        color: rgba(0, 0, 0, 0.60);
+        line-height: 130%;
+        strong {
+            font-family: "Jost Medium";
+            color: #000;
+        }
+    }
+    &__colors-icon{
+        margin-left: 12px;
+    }
+}
+.category{
+    &__slider{
+        width: 100%;
+        height: 100%;
+    }
+    &__img{
+        width: 100%;
+        transition: all 0.4s;
+        &:hover {
+            @include btn-eff();
+        }
+    }
+    &__prev{
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+        left: 0;
+        z-index: 3;
+        width: 30px;
+        height: 60px;
+        background-color: #B1C965;
+    }
+    &__next{
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+        right: 0;
+        z-index: 3;
+        width: 30px;
+        height: 60px;
+        background-color: #B1C965;
+    }
+    &__label{
+        position: absolute;
+        bottom: -60px;
+        left: -30px;
+        width: 240px;
+        height: 120px;
+        background-color: #B1C965;
+        padding: 26px;
+        color: #ffffff;
+        z-index: 4;
+    }
+    &__label-title{
+        font-family: "Jost Regular";
+        width: 100%;
+        font-size: 20px;
+        font-style: normal;
+        text-align: end;
+        line-height: 130%;
+        margin-bottom: 6px;
+    }
+    &__label-price{
+        font-family: "Jost Medium";
+        font-size: 32px;
+        font-style: normal;
+        width: 100%;
+        text-align: end;
+        line-height: 130%;
+    }
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: '' !important;
+}
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    .block-3 {
+        &__lines{
+            top: -142px;
+        }
+        &__decor{
+            top: -17px;
+            right: 33px;
+            height: 80px;
+            width: 115px;
+        }
+        &__background{
+            width: 315px;
+        }
+        &__cont-h{
+            font-size: 36px;
+        }
+        &__categories-row{
+            @include flex-column();
+        }
+        &__category{
+            width: 330px;
+            height: 330px;
+            margin-bottom: 100px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &_last {
+                width: 330px;
+                height: 330px;
+                margin-left: 0;
+            }
+        }
+        &__colors{
+            @include flex-column();
+        }
+        &__colors-text{
+            font-size: 18px;
+            line-height: 160%;
+            text-align: center;
+        }
+        &__colors-icon{
+            margin-left: 0;
+            margin-top: 30px;
+            width: 90px;
+        }
+    }
+    .category{
+        &__label{
+            left: -20px;
+        }
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 560px) {
+}
+@media only screen and (min-width: 561px) and (max-width: 767px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+}
+@media only screen and (min-width: 1180px) and (max-width: 1300px) {
+} 

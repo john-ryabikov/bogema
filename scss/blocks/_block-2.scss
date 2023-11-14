@@ -1,0 +1,108 @@
+.block-2 {
+    @include flex-column();
+    width: 100%;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    &__cont{
+        @include flex-column();
+        width: 100%;
+    }
+    &__decor{
+        position: absolute;
+        top: -20px;
+        left: 245px;
+        width: 290px;
+        height: 170px;
+        background-color: #B1C965;
+    }
+    &__cont-h{
+        position: relative;
+        width: 100%;
+        font-family: "Jost Bold";
+        font-size: 50px;
+        font-style: normal;
+        text-align: start;
+        line-height: 130%;
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: 110px;
+    }
+    &__tech{
+        @include flex-column();
+        width: 100%;
+    }
+    &__tech-row{
+        @include flex-row();
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 90px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__tech-card{
+        @include flex-column();
+        justify-content: flex-start;
+    }
+}
+.tech-card{
+    &__icon{
+        margin-bottom: 30px;
+    }
+    &__text{
+        @include flex-column();
+        width: 294px;
+        text-align: center;
+        color: #000;
+    }
+    &__text-title{
+        font-family: "Jost Medium";
+        margin-bottom: 12px;
+        font-size: 26px;
+        font-style: normal;
+        text-align: center;
+        line-height: 130%;
+    }
+    &__text-subtitle{
+        position: relative;
+        font-family: "Jost Light";
+        font-size: 20px;
+        font-style: normal;
+        text-align: center;
+        line-height: 130%;
+    }
+}
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    .block-2 {
+        padding-top: 300px;
+        &__cont{
+            @include flex-column();
+            width: 100%;
+        }
+        &__decor{
+            top: -5px;
+            left: 178px;
+            height: 100px;
+        }
+        &__cont-h{
+            font-size: 36px;
+        }
+        &__tech-row{
+            @include flex-column();
+        }
+        &__tech-card{
+            margin-bottom: 90px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 560px) {
+}
+@media only screen and (min-width: 561px) and (max-width: 767px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+}
+@media only screen and (min-width: 1180px) and (max-width: 1300px) {
+} 
