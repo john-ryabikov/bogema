@@ -381,14 +381,14 @@ ul[class], ol[class] {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  height: 670px;
+  height: 490px;
 }
 .block-1__lines {
   position: absolute;
-  bottom: -208px;
+  bottom: -190px;
   left: -1790px;
   width: 2000px;
-  height: 330px;
+  height: 220px;
   border-top: 1px solid #000;
   border-right: 1px solid #000;
   z-index: 0;
