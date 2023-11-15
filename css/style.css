@@ -1079,6 +1079,7 @@ ul[class], ol[class] {
     height: 80px;
   }
   .block-4__cont-h {
+    width: 360px;
     font-size: 36px;
   }
   .block-4__cont-subh {
@@ -1259,6 +1260,7 @@ ul[class], ol[class] {
 @media only screen and (min-width: 0) and (max-width: 480px) {
   .block-5__info {
     background: url(https://john-ryabikov.github.io/bogema/img/Block-5/block-5_img-mob.jpg) no-repeat;
+    background-size: cover;
   }
   .block-5__info-h {
     font-size: 46px;
