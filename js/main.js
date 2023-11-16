@@ -1,6 +1,8 @@
 $(document).ready(function(){
     "use srtict";
 
+    const menu = $('.menu');
+    const btnsForMenu = $('.header__btn-menu, .menu__close, .nav-list__text');
     const html = $('html');
     const body = $('body');
     const slider = new Swiper(".category__slider", {
@@ -23,5 +25,12 @@ $(document).ready(function(){
     $(window).on('beforeunload', function(){
         $(this).scrollTop(0);
     });
+    
+    btnsForMenu.click(function() {
+        menu.toggleClass('active');
+        html.toggleClass('stop-scroll');
+    });
+
+    new WOW().init();
 
 })
