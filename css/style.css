@@ -189,15 +189,15 @@ ul[class], ol[class] {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  margin-top: 100px;
 }
 .nav-list {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
-  height: 400px;
 }
 .nav-list__link {
   width: 100%;
@@ -216,6 +216,14 @@ ul[class], ol[class] {
   color: #ffffff;
   width: 100%;
   text-align: center;
+}
+.menu__call {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .active {
   transform: translateX(0);
@@ -458,7 +466,7 @@ ul[class], ol[class] {
 }
 .block-1__arrow {
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   left: 50px;
 }
 
