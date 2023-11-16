@@ -531,6 +531,7 @@ ul[class], ol[class] {
   position: absolute;
   bottom: -100px;
   left: 50px;
+  animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
 }
 
 @media only screen and (min-width: 0) and (max-width: 480px) {
