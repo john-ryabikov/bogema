@@ -225,6 +225,66 @@ ul[class], ol[class] {
   justify-content: center;
   width: 100%;
 }
+.menu__call-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.menu__call-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.menu__call-number {
+  position: relative;
+  font-family: "Jost Regular";
+  font-size: 26px;
+  font-style: normal;
+  color: #000;
+  line-height: 130%;
+  text-align: end;
+}
+.menu__call-number span {
+  color: #898989;
+}
+.menu__call-time {
+  position: relative;
+  font-family: "Jost Thin";
+  font-size: 14px;
+  font-style: normal;
+  color: #000;
+  line-height: 130%;
+  text-align: end;
+}
+.menu__call-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  transition: all 0.4s;
+}
+.menu__call-btn:hover {
+  transition: all 0.3s;
+}
+.menu__call-btn:hover:hover {
+  transform: scale(1.1, 1.1);
+}
+.menu__call-btn:hover:active {
+  transform: scale(0.98, 0.98);
+}
 .active {
   transform: translateX(0);
 }
