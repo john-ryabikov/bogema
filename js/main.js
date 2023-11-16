@@ -1,6 +1,6 @@
+'use srtict';
 $(document).ready(function(){
-    "use srtict";
-
+    
     const menu = $('.menu');
     const btnsForMenu = $('.header__btn-menu, .menu__close, .nav-list__text');
     const html = $('html');
